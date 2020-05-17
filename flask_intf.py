@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-from flask_zmq import Interface
+from zmq_topology import Interface
 from flask import Flask, render_template, request
 
 """
