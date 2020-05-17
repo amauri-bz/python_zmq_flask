@@ -6,7 +6,7 @@ to a Controller module that publishes a PUB/SUB message to update the DB module 
 Every sensor sends the information to the DB module that summarises and publishes the new data to the Controller module.
 
 The final information is displayed on a web page table.
-
+```
 +------+       +------+   REQ   +------+
 |      |  POST |      +-------->+      |SUB
 | HTML +<----->+ INTF |         | CTRL +<--------------+
@@ -29,3 +29,4 @@ The final information is displayed on a web page table.
                                +-------+               |
                                 PUB|                   |
                                    +-------------------+
+```
