@@ -1,0 +1,31 @@
+<html>
+    <h1>ZMQ Test</h1>
+    <pre>
++------+       +------+   REQ   +------+
+|      |  POST |      +-------->+      |SUB
+|HTML  +<----->+ INTF |         | CTRL +<--------------+
+|      |       |      +<--------+      |               |
++------+       +------+   REP   +------+               |
+                               PUB|  |PUB              |
+                                  |  |                 |
+                        SUBv------+  +------v SUB      |
+                     +------+             +------+     |
+                     |      |             |      |     |
+                     |SENSOR|             |SENSOR|     |
+                     |      |             |      |     |
+                     +------+             +------+     |
+                         |PUB                |PUB      |
+                         |                   |         |
+                         |     +-------+     |         |
+                         +---->+       +<----+         |
+                            SUB|  DB   |SUB            |
+                               |       |               |
+                               +-------+               |
+                                PUB|                   |
+                                   +-------------------+
+    </pre>
+    <h3>Request information:</h3>
+    <form method="POST">
+        <input type="submit" value="Submit"><br>
+    </form>
+</html>
